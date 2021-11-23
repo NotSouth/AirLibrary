@@ -9,6 +9,7 @@ namespace AirLibrary
     {
         //properties are strings because we can always parse them later in the case they are numbers
         //i dont know how the sensor will display this data
+        public int ID { get; set; }
         public string Temperature { get; set; }
         public string CO2 { get; set; }
         public string Humidity { get; set; }
