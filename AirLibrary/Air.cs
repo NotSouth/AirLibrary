@@ -13,9 +13,11 @@ namespace AirLibrary
         public string Temperature { get; set; }
         public string CO2 { get; set; }
         public string Humidity { get; set; }
+        public DateTime TimeStamp { get; set; }
 
         public Air(string temp, string co2, string humidity)
         {
+            TimeStamp = DateTime.Now;
             Temperature = temp;
             CO2 = co2;
             Humidity = humidity;
